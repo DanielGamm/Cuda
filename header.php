@@ -126,11 +126,16 @@
                     <img src="<?php echo (get_template_directory_uri());?>/assets/img/logo.png" alt="logo">
                 </div>
                 <nav class="header__menu" id="nav">
-                    <a class="header__link header__active" href="#" data-scroll="#welcome">Home</a>
+                <?php wp_nav_menu( array (
+                    'theme_location'  => 'header__menu',
+                    'menu_class'      => 'header__menu', 
+	                'menu_id'         => 'nav',
+                )); ?>
+                    <!-- <a class="header__link header__active" href="#" data-scroll="#welcome">Home</a>
                     <a class="header__link" href="#" data-scroll="#testimonials">About</a>
                     <a class="header__link" href="#" data-scroll="#portfolio">WORK</a>
                     <a class="header__link" href="#" data-scroll="#team">Blog</a>
-                    <a class="header__link" href="#" data-scroll="#touch">Contact</a>
+                    <a class="header__link" href="#" data-scroll="#touch">Contact</a> -->
                 </nav>
                 <div class="burger" id="navToggle">
                     <span class="burger__item">menu</span>
