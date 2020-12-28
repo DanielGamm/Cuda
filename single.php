@@ -2,6 +2,7 @@
 <div class="pustoy__blok" style="padding: 85px 7px 15px; width: 100%; color: #2e2e2e;">
 
 <div class="main__content">
+    
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<!-- Цикл WordPress -->
     <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">

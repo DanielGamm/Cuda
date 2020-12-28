@@ -1,6 +1,15 @@
 <!-- footer -->
 <footer class="footer">
         <div class="container">
+        <?php if ( is_active_sidebar( 'true_foot' ) ) : ?>
+ 
+        <div id="true-foot" class="sidebar">
+
+            <?php dynamic_sidebar( 'true_foot' ); ?>
+
+        </div>
+
+        <?php endif; ?>
             <div class="footer__socialMedia">
                 <ul class="footer__list--socialMedia">
                     <li><a class="footer__item facebook" href="#">Facebook</a></li>

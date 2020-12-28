@@ -1,0 +1,69 @@
+/*slick slider
+================================================*/
+.slider{
+    position: relative;
+}
+.slick-arrow{
+  position: absolute;
+  /* top: 48vh; */
+  z-index: 5;   
+  font-size: 0;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: all 0,20s;
+  cursor: pointer;
+}
+
+ .slick-arrow:hover{
+     opacity: 1;
+ }
+
+ .slick-arrow:before{
+     content: '';
+     display: block;
+     width: 30px;
+     height: 30px;
+     position: absolute;
+     top: 10px;
+     left: 10px;
+     transform: rotate(45deg);
+ }
+  
+ .team .slick-prev{
+     left: 25px;
+ }
+
+ .team .slick-next{
+     right: 25px;
+ }
+
+ .slick-prev:before,
+ .slick-next:before
+ {
+     font-size: 0;
+ }
+
+.team .slick-prev:before{
+    border-left: 4px solid #000;
+    border-bottom: 4px solid #000;
+}
+.team .slick-next:before{
+    border-right: 4px solid #000;
+    border-top: 4px solid #000;
+} 
+.testimonials .slick-prev:before{
+    border-left: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+}
+.testimonials .slick-next:before{
+    border-right: 4px solid #fff;
+    border-top: 4px solid #fff;
+} 
+
+ /* .slick-prev:before,
+ .slick-next:before {
+     color: black;
+ } */

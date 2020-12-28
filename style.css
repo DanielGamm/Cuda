@@ -1,16 +1,73 @@
 /**
- * Theme Name:  Cuda
- * Description: Короткое описание темы
- * 
- * Theme URI:   URL темы. Пр: http://wordpress.org/themes/twenty
- * Author:      Имя автора
- * Author URI:  URL автора
- *
- * Tags:        black, brown, orange
- * Text Domain: Домен перевода темы. Пр: twentythirteen
- *
- * License:     Лицензия. Пр: GNU General Public License v2 or later
- * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- *
- * Version:     1.0
- */
+* Theme Name:  Cuda
+* Description: Короткое описание темы
+* 
+* Theme URI:   URL темы. Пр: http://wordpress.org/themes/twenty
+* Author:      Имя автора
+* Author URI:  URL автора
+*
+* Tags:        black, brown, orange
+* Text Domain: Домен перевода темы. Пр: twentythirteen
+*
+* License:     Лицензия. Пр: GNU General Public License v2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*
+* Version:     1.0
+*/
+
+.wrapper, .pustoy__blok {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.right-sidebar {
+    width: 20vw;
+    margin-left: 20px;
+}
+.page {
+    width: 100%;
+}
+
+/* Делаем плитку для archive.php */
+.wrapper {
+    padding: 85px 7px 15px;
+    width: 100%;
+    color: #2e2e2e;
+}
+.main__content {
+    display: flex;
+    justify-content: space-between;
+}
+.archive__style .post {
+    width: 32%;
+    height: 100%;
+    max-height: 60vh;
+    overflow: hidden;
+    background-color: #344b8e25;
+    padding: 7px;
+}
+.archive__style .post:hover{
+    background-color:#344b8e45;
+    transition: all .2 linear;
+    cursor: pointer;   
+    max-height: 80vh;
+}
+
+.archive__style .post__titlezz {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 45px;
+    letter-spacing: 3px;
+    line-height: 1.15;
+    position: relative;
+    text-align: center;
+    color: #273a71;
+}
+.archive__style .post__hrefzz {
+    width: 100%;
+    color: inherit;
+}
