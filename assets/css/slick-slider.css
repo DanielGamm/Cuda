@@ -54,6 +54,11 @@
     border-right: 4px solid #000;
     border-top: 4px solid #000;
 } 
+
+.testimonials .slick-slider {
+    width: 85%;
+    margin: 0 auto;
+}
 .testimonials .slick-prev:before{
     border-left: 4px solid #fff;
     border-bottom: 4px solid #fff;
@@ -63,7 +68,4 @@
     border-top: 4px solid #fff;
 } 
 
- /* .slick-prev:before,
- .slick-next:before {
-     color: black;
- } */
+ 

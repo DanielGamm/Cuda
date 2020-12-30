@@ -3,7 +3,7 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<!-- Цикл WordPress -->
-    <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+    <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
         <h2 style="
     font-weight: 700;
     font-size: 40px;
@@ -13,7 +13,7 @@
     position: relative;
     text-align: center;"><a style="color: #273a71;" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
         <?php the_content(); ?>
-    </div>
+    </article>
 
 
 <?php endwhile; else : ?>

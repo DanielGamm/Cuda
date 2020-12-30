@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
     integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,300;1,600&display=swap" rel="stylesheet">
-    <title>Cuda</title>
     <link rel="icon" href="<?php echo (get_template_directory_uri());?>//favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="<?php echo (get_template_directory_uri());?>//favicon.ico" type="image/x-icon">
     <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/> -->

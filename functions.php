@@ -2,8 +2,16 @@
 add_action('wp_enqueue_scripts', 'init_theme');
 add_action('after_setup_theme', 'theme_register_nav_menu');    /* Указываем что нашей теме нужен функционал */
                                                               /* произвольных меню*/
+add_action('after_setup_theme', 'theme_add_feature'); 
 add_action( 'widgets_init', 'true_register_wp_sidebars' );
   
+add_filter( 'document_title_separator', 'filter_title_change_separator' );
+function filter_title_change_separator( $sep ){
+	// filter...
+    $sep = ' || ';
+	return $sep;
+}
+
 function true_register_wp_sidebars() {
 
 /* В боковой колонке - первый сайдбар */
@@ -33,6 +41,11 @@ register_sidebar(
 );
 }
 
+function theme_add_feature() {
+    add_theme_support( 'title-tag' );
+    add_image_size( 'my-thumbnail', 260, 260, true );
+    add_theme_support('post-thumbnails');
+}
 
 function theme_register_nav_menu() {
     register_nav_menu('header__menu', 'menu in header');
@@ -45,6 +58,7 @@ function init_theme(){
     // * Styles init *
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     wp_enqueue_style('Cuda', get_template_directory_uri() . '/assets/css/style.css');
+    wp_enqueue_style('CudaSidebar', get_template_directory_uri() . '/assets/css/sidebar.css');
 
     // * Scripts init *
     

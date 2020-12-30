@@ -24,10 +24,6 @@
     margin: 0 auto;
     padding: 0 15px;
 }
-.right-sidebar {
-    width: 20vw;
-    margin-left: 20px;
-}
 .page {
     width: 100%;
 }
@@ -41,6 +37,7 @@
 .main__content {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .archive__style .post {
     width: 32%;
