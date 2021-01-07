@@ -28,7 +28,8 @@
     width: 100%;
 }
 
-/* Делаем плитку для archive.php */
+/*         .main__content 
+     Делаем плитку для archive.php */
 .wrapper {
     padding: 85px 7px 15px;
     width: 100%;
@@ -38,6 +39,8 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 .archive__style .post {
     width: 32%;
@@ -68,3 +71,18 @@
     width: 100%;
     color: inherit;
 }
+@media(max-width: 990.98px){
+    .main__content{
+        margin-top: 10px;
+    }
+    .archive__style .post__titlezz {
+        font-size: 35px;
+    }
+    .archive__style .post__titlezz {
+        margin-bottom: 35px;
+    }
+}
+
+
+
+                           

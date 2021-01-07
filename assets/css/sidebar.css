@@ -1,37 +1,80 @@
+.footer__socialMedia{
+  padding-bottom: 50px;
+}
 /*                  wp style
 ================================================*/
 
-
-/*       right-sidebar
+/*             header__menu
+===============================================*/
+.header__menu li.menu-item a{
+  font-size: 18px;
+}
+/*             right-sidebar
 ================================================*/
-
 .right-sidebar {
   /* background-color: #FBFA92; */
   background-color: #344b8e25;
   width: 300px;
   margin-left: 15px;
+  margin-top: 20px;
 }
-.widget_nav_menu{
-  /* margin: 15px 45px; */
+@media(max-width: 990.98px){
+  .right-sidebar {
+    margin-top: 10px;
+  }
 }
+/*        widget_nav_menu         */
+
+.widget_nav_menu {
+  margin-bottom: 15px;
+}
+.widget_nav_menu > .widget-title{
+ margin: 15px 0 8px 25px;
+ color: #273a71;
+ font-size: 22px;
+}
+.widget_nav_menu > .menu-header__menu-container > .menu{
+  margin-left: 15px;
+}
+.widget_nav_menu > .menu-header__menu-container > .menu > li > a{
+  color:#07118f ;
+  font-size: 18px;
+}
+
+.widget_nav_menu > .menu-header__menu-container > .menu > li > a:hover{
+  color:#FE0202;
+  
+}
+/*         widget_calendar           */
 
 .right-sidebar > .widget_calendar > .widget-title{
   color:#273a71;
-  margin-left: 35px;
+  margin: 0 0 5px 35px;
+  font-size: 22px;
 }
 caption{
-  color: #717e86 ;
+  color: #2374a7 ;
+  margin-bottom: 8px;
 }
 .wp-calendar-table{
   margin: 0 15px 15px 15px;
   cursor: pointer;
-  background-color: #F5E9E9 ;
+  background-color: #b3b8e3 ;
+}
+.wp-calendar-table tr>th{
+  font-size: 20px;
+  color: #2c3757;
 }
 .wp-calendar-table tr>th:hover{
-  background-color: #F5BABA ;
+  color: #FE0202;
 } 
+.wp-calendar-table tr>td{
+  font-size: 18spx;
+  color: #2c3757;
+}
 .wp-calendar-table tr>td:hover{
-  background-color: #F5BABA;
+  color: red;
+
 } 
 .pad:hover{
   background-color:  #F5E9E9 ;
@@ -48,4 +91,83 @@ margin-left: 10px;
 .sidebar > .foot > .widget-title{
   color: #fff;
   font-size: 20px;
+}
+
+/*                 widget_text            */
+
+.widget_text > .widget-title{
+  color:#273a71;
+  margin: 0 5px 5px 25px;
+  font-size: 20px;
+}
+/*             widget_meta               */
+
+.widget_meta > .widget-title{
+  color:#273a71;
+  margin: 0 5px 5px 25px;
+  font-size: 20px;
+}
+
+.widget_meta > ul{
+  margin-left: 15px;
+}
+
+.widget_meta > ul > li > a{
+  font-size: 18px;
+  color:#07118f ;
+}
+.widget_meta > ul > li > a:hover{
+  color:#FE0202;
+}
+.widget_meta > ul > li:nth-child(2){
+  background-color: #b3b8e3;
+  padding: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+/*                footer
+======================================*/
+
+.footer > .container > .sidebar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+/*                widget_text           
+=====================================*/
+.sidebar > .foot{
+  width: 32%;
+}
+.sidebar > .foot > .widget-title{    /*widget-title*/
+  color: #6cbff4;
+  font-size: 22px;
+}
+ .footer > .container > .sidebar > .foot > .textwidget > p{   /*(p)some text*/
+  text-align: left;
+  font-size: 18px;
+}
+
+.footer > .container > .sidebar > .widget_nav_menu > .widget-title{   /*.widget-title*/
+  margin-top: 0;
+}
+.footer > .container > .sidebar > .widget_nav_menu > .menu-support-container > .menu > .menu-item > a{ 
+  color:#fff ;                /*foot nav_menu */
+  font-size: 20px;
+}
+.footer > .container > .sidebar > .widget_nav_menu > .menu-support-container > .menu > .menu-item > a:hover{
+  color:#323669;
+  transition: all 0.5s;
+  background-color: #a2c5ee;
+  padding: 5px 20px;
+  border-radius: 3px;
+}
+#s{
+  width: 250px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgb(198, 216, 243);
 }

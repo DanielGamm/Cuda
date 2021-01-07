@@ -50,7 +50,6 @@ function theme_add_feature() {
 function theme_register_nav_menu() {
     register_nav_menu('header__menu', 'menu in header');
     register_nav_menu('portfolio', 'menu in portfolio');
-    /*нужно ли делать wp menu в footer(e)?*/
 }
 
 function init_theme(){

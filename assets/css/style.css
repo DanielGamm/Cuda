@@ -601,11 +601,11 @@ Team
         margin: 0 auto;
     }
 }
-@media(max-width: 459.98px){
+/* @media(max-width: 459.98px){
     .wrapper__teamSlider{
-        /* padding: 0 35px; */
+        padding: 0 35px;
     }
-} 
+}  */
 /*=======
 skills
 =======*/
@@ -1487,6 +1487,6 @@ input.touch__box, textarea.touch__box-messagee{
 }
 
 .customize-support{
-    background-color: #E6EAEC ;
+    background-color: #feffff ;
 }
 
